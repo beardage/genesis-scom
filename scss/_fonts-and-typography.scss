@@ -1,0 +1,71 @@
+// font imports here
+
+
+
+// typography base styles
+
+$font-heading: sans-serif;
+$font-heading-weight: 700;
+
+$font-stack: sans-serif;
+
+$font-size-base: 12px;
+$font-size-navigation: 16px;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-heading;
+	font-weight: $font-heading-weight;
+}
+h1 {
+	font-size: 3.5 * $font-size-base;
+}
+h2 {
+	font-size: 3 * $font-size-base;
+}
+h3 {
+	font-size: 2.5 * $font-size-base;
+}
+h4 {
+	font-size: 2 * $font-size-base;
+}
+h5 {
+	font-size: 1.5 * $font-size-base;
+}
+h6 {
+	font-size: 1 * $font-size-base;
+}
+body {
+	font-family: $font-stack;
+	color: $color-light;
+	line-height: 1.5;
+	p {
+		margin-bottom: $length-medium;
+	}
+}
+a {
+	color: $brand-primary;
+	text-decoration: none;
+	transition: color 200ms ease-in-out;
+	&:hover {
+		color: $color-light;
+	}
+}
+
+// utility classes
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+
+// styling html style elements
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 800;
+}
