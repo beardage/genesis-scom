@@ -3,14 +3,14 @@
 require_once( get_template_directory() . '/lib/init.php' );
 
 // Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'Allnighter' );
+define( 'CHILD_THEME_NAME', 'SCOM' );
 define( 'CHILD_THEME_URL', 'http://www.kylebeard.com/' );
 
 // html5
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 
 // Require the Lib stuff
-require_once( get_stylesheet_directory() . '/lib/cpts/portfolio-cpt.php' );
+require_once( get_stylesheet_directory() . '/lib/structure/header-and-footer.php' );
 
 // Add Viewport meta tag for mobile browsers
 add_action( 'genesis_meta', 'sample_viewport_meta_tag' );
