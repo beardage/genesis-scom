@@ -1,14 +1,11 @@
 /*
 *
-* McGriddle v.1.0
-* https://github.com/beardage/mcgriddle
+* McGriddle v.03
 *
 * changelog
-* v.0.1 - Basic classes
-* v.0.2 - fixed breakpoint containers
-* v.0.3 - removed container breakpoints, added breakpoint mixin and reorganized grid file for better cascading
-* v.1.0 - first publish on github
-*
+* v.01 - Basic classes
+* v.02 - fixed breakpoint containers
+* v.03 - removed container breakpoints, added breakpoint mixin and reorganized grid file for better cascading
 *
 */
 
@@ -182,18 +179,18 @@ $breakpoints: (
 
 // containers and shit
 
-section, #wrap, .site-header {
+section, #wrap, .site-header, .blog .content, .single .content {
 	padding-left: 12%;
 	padding-right: 12%;
 }
 @include when-size-is('large-desktop') {
-	section, #wrap, .site-header {
+	section, #wrap, .site-header, .blog .content, .single .content {
 		padding-left: 16%;
 		padding-right: 16%;
 	}
 }
 @include when-size-is('small-desktop') {
-	section, #wrap, .site-header {
+	section, #wrap, .site-header, .blog .content, .single .content {
 		padding-left: 6%;
 		padding-right: 6%;
 	}
@@ -206,7 +203,7 @@ section, #wrap, .site-header {
 	.one-fourth, .three-fourths, .one-third, .two-thirds, .one-half, .one {
 		width: 100%;
 	}
-	section, #wrap, .site-header {
+	section, #wrap, .site-header, .blog .content, .single .content{
 		padding-left: 6%;
 		padding-right: 6%;
 	}
