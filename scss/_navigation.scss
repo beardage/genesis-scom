@@ -1,0 +1,12 @@
+.site-header {
+	.logo {
+		padding: $length-medium;
+	}
+	.nav-primary {
+		float: right;
+		.menu-item {
+			float: left;
+			padding: $length-medium;
+		}
+	}
+}

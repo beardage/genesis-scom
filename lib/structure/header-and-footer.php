@@ -17,6 +17,8 @@ function an_do_header() {
 		<ul class="navigation right">
 			<?php genesis_do_nav();  ?>
 		</ul>
+
+		<div class="clear"></div>
 	</div>
 	<?php
 }
