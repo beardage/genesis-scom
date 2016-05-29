@@ -1,12 +1,18 @@
 .site-header {
 	.logo {
-		padding: $length-medium;
+		padding: $length-medium $length-medium $length-medium 0;
+		a {
+			color: $color-light;
+		}
 	}
 	.nav-primary {
 		float: right;
 		.menu-item {
 			float: left;
 			padding: $length-medium;
+			a {
+				color: $color-light;
+			}
 		}
 	}
 }
